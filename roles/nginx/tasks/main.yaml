@@ -8,12 +8,7 @@
   shell: |
     yum -y update
 
-- name: Update repositories cache
-  yum:
-    name: '*'
-    state: latest
-  register: yum_update_result
-  changed_when: yum_update_result | changed
+
 
 - name: install Nginx
   apt:
