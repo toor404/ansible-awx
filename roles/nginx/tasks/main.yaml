@@ -1,6 +1,12 @@
 - name: update ubuntu
+  when: ansible_distribution == 'Ubuntu'
   shell: |
     apt-get update
+
+- name: update CentOS
+  when: ansible_distribution == 'CentOS'
+  shell: |
+    yum -y update
 
 - name: install Nginx
   apt:
