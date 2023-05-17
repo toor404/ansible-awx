@@ -1,0 +1,10 @@
+[webserver]
+34.101.81.30
+34.101.96.229
+
+[backend-sm]
+34.101.246.57
+
+[all:vars]
+ansible_user=fariznolastname
+ansible_ssh_private_key_file=/Users/fariznolastname/.ssh/id_rsa
